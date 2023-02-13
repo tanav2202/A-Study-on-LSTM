@@ -1,0 +1,12 @@
+numpy
+pandas
+matplotlib
+mplfinance
+seaborn
+yfinance==0.1.70
+yahoo-fin==0.8.9.1
+tensorflow
+keras
+sklearn
+dateutil
+statsmodels
