@@ -22,6 +22,12 @@ The forget gate determines which information from the previous state of the memo
 ### The Output Gate
 The output gate determines which information from the memory cell should be output to the next step of the network. It is a tanh layer that takes as input the previous output and the current input, and outputs a value between -1 and 1. The output gate then multiplies this value with the result of the input gate to determine the final output.
 
+##  Bidirectional LSTM
+
+A Bidirectional Long Short-Term Memory (BLSTM) is a type of Recurrent Neural Network (RNN) that processes a sequence of inputs in both forward and backward directions simultaneously. Unlike a traditional LSTM, which processes the input sequence from left to right, a BLSTM processes the input sequence from left to right and from right to left simultaneously.
+
+![image](https://user-images.githubusercontent.com/78900552/227276376-bc60a4c6-a2bc-4eb1-9144-492909b21606.png)
+
 # Applications
 
 ## Stock Predictor
@@ -32,3 +38,8 @@ The repository includes three files for the stock predictor application:
 - EDA.ipynb: This file contains the Exploratory Data Analysis (EDA) of the chosen stock. It includes visualizations such as line plots, scatter plots, and box plots to understand the trends and patterns in the data.
 
 - predictor.ipynb: This file contains the LSTM model to generate predictions for the chosen stock. The model takes in the historical data and generates predictions for the future closing price of the stock. The file also includes a plot of the predicted values along with the actual values for visual comparison.
+
+
+# Conclusion
+
+This study provides a comprehensive understanding of LSTM and its applications. The stock predictor application serves as an example of how LSTM can be used for time series prediction. The study can be used as a starting point for further research and implementation of LSTM in various applications.
