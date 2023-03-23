@@ -1,5 +1,7 @@
-# Long Short-Term Memory (LSTM) Networks
-This repository provides an in-depth explanation of Long Short-Term Memory (LSTM) networks, which are a type of Recurrent Neural Network (RNN) designed to overcome the vanishing gradient problem commonly associated with standard RNNs.
+# Study on LSTM and its Applications
+This repository contains a study on Long Short-Term Memory (LSTM) and its applications. LSTM is a type of Recurrent Neural Network (RNN) that is widely used in various applications such as speech recognition, natural language processing, and time series prediction.
+
+# Theory
 
 ## Recurrent Neural Networks and the Vanishing Gradient Problem
 Before we dive into LSTM networks, let's first discuss standard RNNs and the vanishing gradient problem they often face. RNNs are neural networks designed to work with sequential data, where the output from the previous step is fed as an input to the current step. The idea is to use the previous output as a form of memory, allowing the network to maintain some context of the input sequence.
@@ -19,3 +21,14 @@ The forget gate determines which information from the previous state of the memo
 
 ### The Output Gate
 The output gate determines which information from the memory cell should be output to the next step of the network. It is a tanh layer that takes as input the previous output and the current input, and outputs a value between -1 and 1. The output gate then multiplies this value with the result of the input gate to determine the final output.
+
+# Applications
+
+## Stock Predictor
+The repository includes three files for the stock predictor application:
+
+- scraper.py: This file uses the Yahoo Finance API to scrape all the necessary data for the chosen stock. The data includes the opening price, closing price, high price, low price, and volume.
+
+- EDA.ipynb: This file contains the Exploratory Data Analysis (EDA) of the chosen stock. It includes visualizations such as line plots, scatter plots, and box plots to understand the trends and patterns in the data.
+
+- predictor.ipynb: This file contains the LSTM model to generate predictions for the chosen stock. The model takes in the historical data and generates predictions for the future closing price of the stock. The file also includes a plot of the predicted values along with the actual values for visual comparison.
